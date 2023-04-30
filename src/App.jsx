@@ -1,18 +1,16 @@
-import HeroSetion from './Components/LandingComp/Hero/heroSetion'
-import Body from './Landing Page/Body'
-import Footer from './Landing Page/Footer'
-import Header from './Landing Page/Header'
+import LandingPage from './Landing Page/LandingPage'
+import Research from './Prompt/prompt'
 import './App.css'
+import { Route, Routes } from 'react-router'
 
 function App() {
 
   return (
     <>
-      <div className='bg-slate-900'>
-      <HeroSetion/> 
-      <Body/>
-      <Footer/>
-      </div>
+      <Routes>
+        <Route path='/' element={<LandingPage/>}/>
+        <Route path='/Research' element={<Research/>}/>
+      </Routes>
     </>
   )
 }
