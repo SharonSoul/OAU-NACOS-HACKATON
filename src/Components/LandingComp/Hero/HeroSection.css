@@ -1,0 +1,4 @@
+.fisrt-blur{
+    background-color: aqua;
+    backdrop-filter: blur(5px);
+}
