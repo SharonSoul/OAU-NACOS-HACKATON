@@ -1,45 +1,32 @@
-import React, { useState } from "react";
-// An input box for the user to enter a prompt that will be sent to chatgpt api and the response will be put in a box under your prompt (not a chat like interface, just a prompt and a response box) the response box changes after every prompt
-// Dependencies: React, Prompt.css
-// Usage: Used in App.js
+import React from 'react'
+import { Link } from 'react-router-dom'
+Link
 
-export default function Prompt(props) {
-	const [prompt, setPrompt] = useState("");
-	const [response, setResponse] = useState("");
-
-	const handleChange = (event) => {
-		setPrompt(event.target.value);
-	};
-
-	const handleSubmit = (event) => {
-		event.preventDefault();
-		setResponse("Loading...");
-		fetch("https://chatgpt-api7.p.rapidapi.com/ask", {
-			method: "POST",
-			headers: {
-				"content-type": "application/json",
-				"X-RapidAPI-Key": "26d869a8aamshbb869db6e100138p16165djsnff34a30aa61e",
-				"X-RapidAPI-Host": "chatgpt-api7.p.rapidapi.com",
-			},
-			body: JSON.stringify({ prompt: prompt }),
-		})
-			.then((res) => res.json())
-			.then((data) => {
-				setResponse(data.response);
-			})
-			.catch((err) => console.log(err));
-	};
-
+const Research = () => {
 	return (
-		<div className="prompt">
-			<form onSubmit={handleSubmit}>
-				<label>
-					Prompt:
-					<input type="text" value={prompt} onChange={handleChange} />
-				</label>
-				<input type="submit" value="Submit" />
-			</form>
-			<div className="response">{response}</div>
+		<div className='h-[100vh] bg-slate-700 '>
+			<div className='bg-slate-900 text-white sticky top-0'>
+				<ul className='flex justify-between p-4 '>
+					<li><Link to="">Overview</Link></li>
+					<li><Link to="">Citations</Link></li>
+					<li><Link to="">Images</Link></li>
+					<li><Link to="">Books</Link></li>
+					<li><Link to="">Profile</Link></li>
+				</ul>
+			</div>
+			<div className='h-[80vh]'></div>
+			<div className='bg-slate-900  p-2 '>
+				<div className='flex gap-1 mt-2 ml-2 '>
+					<input type="number" name="" id="" className='rounded-l-md w-1/6' />
+					<input type="text" name="UserInput" id="" className='w-4/6 ' />
+					<button className='bg-black text-white p-2 rounded-md w-1/6'>Send</button>
+				</div>
+				<div className='text-white text-center '>
+					<p>Scholarly Articles</p>
+				</div>
+			</div>
 		</div>
-	);
+	)
 }
+
+export default Research

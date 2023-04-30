@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -7,8 +8,8 @@ const Header = () => {
             <div className='flex justify-between '>
                 <h1 >Logo</h1>
                 <ul className='flex justify-end gap-6  align-middle'>
-                    <li className='font-thin text-2xl text-black border rounded-xl border-slate-800 bg-white p-2'>Login</li>
-                    <li className='font-thin text-2xl text-black border rounded-xl border-slate-800 bg-white p-2'>Sign up</li>
+                    <li className='font-sans font-bold text-2xl text-white'><Link to="/Research">Login</Link></li>
+                    <li className='font-sans font-bold text-2xl text-yellow-100'>Sign up</li>
                 </ul>
             </div>
         </nav>
