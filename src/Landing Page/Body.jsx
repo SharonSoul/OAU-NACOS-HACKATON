@@ -6,8 +6,8 @@ Link
 const Body = () => {
   return (
     <div >
-      <div className='mt-4 m-auto flex w-[90%] gap-1 md:gap-3 justify-center align-middle p-2 '>
-        <img src={images.student} alt="" className='w-1/2 h-auto rounded-lg' />
+      <div className='mt-4 m-auto md:flex w-[90%] gap-1 md:gap-3 justify-center align-middle p-2 '>
+        <img src={images.student} alt="" className='md:w-1/2 h-auto rounded-lg' />
         <div className='w-1/2  bg-slate-700 rounded-lg '>
           <p className='text-base font-thin text-white md:text-base p-3 block m-auto '> Our site provides a comprehensive range of tools and resources to support your academic pursuits, including a vast database of scholarly articles, access to academic conferences and symposiums, research funding opportunities, and collaboration tools. With our intuitive navigation and powerful search tools, you'll find the information you need quickly and easily. At [Website Name], our mission is to support and advance academic research across all disciplines. We believe that the pursuit of knowledge and discovery is essential for the betterment of society, and we are committed to providing researchers and scholars with the resources they need to make a difference in their fields. Our website offers a wide range of features and tools designed to streamline the research process and help you stay up-to-date with the latest developments in your field.</p>
         </div>
