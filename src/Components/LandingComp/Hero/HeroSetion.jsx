@@ -8,8 +8,8 @@ const HeroSetion = () => {
        <div className='backdrop-brightness-50 bg-dark-grey/60 h-[100vh]'>
        <Header/>
         <div className='block m-auto mt-[100px] w-[80%] '>
-          <h1 className=' font-extrabold  p-7 text-4xl'>Welcome to <br/><span className='text-6xl font-extrabold text-sky-500'>BRAINWAVE</span></h1>
-            <p className=' font-thin text-4xl  p-7 w-1/2 text-white' >
+          <h1 className=' font-extrabold  p-7 text-4xl'>Welcome to <br/><span className='md:text-6xl font-extrabold text-sky-500'>BRAINWAVE</span></h1>
+            <p className=' font-thin text-4xl  p-7 md:w-1/2 text-white' >
             The premier academic research website for scholars and researchers.
             </p>
         </div>
