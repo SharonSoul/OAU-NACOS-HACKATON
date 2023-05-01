@@ -18,10 +18,14 @@ const Research = () => {
 				<div className=''>
 					<div className=' m-5 pb-3 flex flex-col align-middle md:flex-row md:gap-1 md:mt-2 md:ml-2 justify-center'>
 						<input type="number" name="" id="" className='rounded-l-md  md:w-[110px] pl-3 text-sm md:text-base mb-3 md:mb-0 p-3 ' placeholder='Word Count' />
-						<input type="text" name="UserInput" id="" className='md:w-[300px] text-base pl-3 mb-3 md:mb-0 p-3' placeholder='Enter Prompt' />
+						<input type="text" name="UserInput" id="" className='md:w-[600px] text-base pl-3 mb-3 md:mb-0 p-3' placeholder='Enter Prompt' />
 						<button className='bg-yellow-100 text-slate-900 font-bold p-2  w-[100px] block m-auto'>Send</button>
 					</div>
 				</div>
+			</div>
+			<div className='w-[90%] m-auto text-white md:mt-4 md:w-[70%]'>
+				<h1 className='bg-slate-900 p-6'>Query Prompt</h1>
+				<p className='p-6'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea corrupti qui iure asperiores veniam molestiae laborum amet harum, sapiente recusandae similique labore eaque voluptates quasi alias suscipit, maxime rerum sed?</p>
 			</div>
 		</div>
 	)
